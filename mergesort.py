@@ -8,4 +8,4 @@ def merge(l1, l2):
     l += l1 if l1 else l2
     return l 
 
-assert(sort([20, 20, 20] + list(range(20)[::-1])) == list(range(20)) + [20, 20, 20])
+assert(sort(list(range(20)[::-1])) == list(range(20)))
