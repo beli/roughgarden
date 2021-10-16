@@ -1,6 +1,5 @@
 def count(l):
-    mid = len(l)//2
-    if mid == 0: return 0, l
+    if (mid := len(l)//2) == 0: return 0, l
     (left, l1), (right, l2) = count(l[:mid]), count(l[mid:])
     splits, l = merge(l1, l2)
     return left + right + splits, l
