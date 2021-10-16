@@ -1,6 +1,6 @@
 def sort(l):
     mid = len(l)//2
-    return l if mid == 0 else merge(sort(l[:mid]), sort(l[mid:]))
+    return l if mid == 0 else merge( sort(l[:mid]), sort(l[mid:]) )
 
 def merge(l1, l2):
     l = []
