@@ -2,7 +2,7 @@ def count(l):
     if (mid := len(l)//2) == 0: return 0, l
     (left, l1), (right, l2) = count(l[:mid]), count(l[mid:])
     cross, l = merge(l1, l2)
-    return left + right + cross, l  # inversions: on the left half, the right half, and across
+    return left + right + cross, l
 
 def merge(l1, l2):
     cross, l = 0, []
