@@ -7,9 +7,9 @@ def count(l):
 def merge(l1, l2):
     splits, l = 0, []
     while l1 and l2: 
-        n, n_split = (l1.pop(0), 0) if l1[0] <= l2[0] else (l2.pop(0), len(l1)) 
+        n, n_splits = (l1.pop(0), 0) if l1[0] <= l2[0] else (l2.pop(0), len(l1)) 
         l.append(n)
-        splits += n_split
+        splits += n_splits
     return splits, l + (l1 if l1 else l2)
 
 assert(count([1, 3, 5, 2, 4, 6]) == (3, [1, 2, 3, 4, 5, 6]))
