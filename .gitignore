@@ -130,5 +130,6 @@ dmypy.json
 
 # Personal options
 .vscode
+mypy.ini
 poetry.lock
 pyproject.toml
