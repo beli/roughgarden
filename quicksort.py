@@ -1,9 +1,8 @@
 def sort(l: list, start: int, end: int):
     if end - start > 1:
         i = j = start
-        pivot = l[start]
         while j < end:
-            if l[j] < pivot:
+            if l[j] < l[start]:
                 i += 1
                 l[i], l[j] = l[j], l[i]
             j += 1
