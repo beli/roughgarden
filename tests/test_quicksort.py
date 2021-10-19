@@ -4,7 +4,6 @@ from hypothesis import given, strategies as st
 
 @given(st.lists(st.integers()))
 def test_qsort(l):
-    l1 = sorted(l)
+    sorted_l = sorted(l)
     qsort(l)
-    l2 = l
-    assert l1 == l2
+    assert l == sorted_l

@@ -1,6 +1,3 @@
-import random
-
-
 def sort(l: list, start: int, end: int):
     if end - start > 1:
         i = j = start
