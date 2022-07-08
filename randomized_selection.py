@@ -1,5 +1,4 @@
 def select(sequence: list, order: int):
-    # l is the current list, o is current order statistic
     pivot = sequence[0]
     left = [e for e in sequence[1:] if e <= pivot]
     right = [e for e in sequence[1:] if e > pivot]
